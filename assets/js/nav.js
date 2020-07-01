@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
           getKlasmenData();
         } else if (page === "matches") {
           getMatchData();
-        } else if (page === "teamFav") {
+        } else if (page === "favorite") {
           getDataFav();
         }
 

@@ -151,23 +151,6 @@ class Show {
   }
 
   static showDataFav(datas) {
-    let dataFav = "";
-    dataFav += `
-    <div class="col s6 m4 l4">
-      <div class="card blue-grey lighten-1">
-        <div class="card-content">
-          <div center-align>
-            <h5 class="center-align">
-              <span class="blue-grey-text text-darken-4">
-                <a href="../team.html?id=${datas.id}" class="light-blue-text text-lighten-5
-                ">${datas.name}</a>
-              </span>
-            </h5>
-          </div>
-        </div>
-      </div>
-    </div>
-    `;
-    document.querySelector("#favorites").innerHTML = dataFav
+
   }
 }
