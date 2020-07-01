@@ -7,6 +7,7 @@ else
   console.log(`Workbox gagal dimuat`);
 
 workbox.precaching.precacheAndRoute([
+  { url: '/assets/img/undraw_empty_xct9.svg', revision: '1' },
   { url: '/favicon.ico', revision: '1' },
   { url: '/index.html', revision: '1' },
   { url: '/index.js', revision: '1' },

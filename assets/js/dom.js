@@ -145,6 +145,7 @@ class Show {
     </div>
     <div class="center-align" style=padding-top:30px>
       <div class="btn waves-effect waves-light blue-grey darken-3"><i id="addFav" class="material-icons blue-grey-text">favorite</i></div>
+      <a href="/#home" class="btn waves-effect waves-light blue-grey darken-3">Home</a>
       <a href="/#favorite" class="btn waves-effect waves-light blue-grey darken-3">Go to Favorites</a>
     </div>
   `;
@@ -175,7 +176,7 @@ class Show {
       });
     } else {
       dataFav += `
-      <img src="../assets/img/undraw_empty_xct9.svg" alt="empty image" style="width: 40%; display: block; margin:10% auto;">
+      <img src="../assets/img/undraw_empty_xct9.svg" alt="oops img" style="width: 40%; display: block; margin:10% auto;">
       <h5 class="grey-text text-darken-1" style="text-align: center;">Ups.. Kamu Tidak Memiliki Team Favorite</h5>
       `;
     }
