@@ -145,12 +145,41 @@ class Show {
     </div>
     <div class="center-align" style=padding-top:30px>
       <div class="btn waves-effect waves-light blue-grey darken-3"><i id="addFav" class="material-icons blue-grey-text">favorite</i></div>
+      <a href="/#favorite" class="btn waves-effect waves-light blue-grey darken-3">Go to Favorites</a>
     </div>
   `;
     document.getElementById("body-content").innerHTML = detailTeamHTML;
   }
 
-  static showDataFav(datas) {
+  static showDataFav(data) {
+    let dataFav = "";
+    if (data.length) {
+      data.map((datas, i) => {
+        console.log(datas)
+        dataFav += `
+        <div class="col s6 m4 l4">
+          <div class="card blue-grey lighten-1">
+            <div class="card-content">
+              <div center-align>
+                <h5 class="center-align">
+                  <span class="blue-grey-text text-darken-4">
+                    <a href="../team.html?id=${datas.id}" class="light-blue-text text-lighten-5
+                    ">${datas.name}</a>
+                  </span>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
+      });
+    } else {
+      dataFav += `
+      <img src="../assets/img/undraw_empty_xct9.svg" alt="empty image" style="width: 40%; display: block; margin:10% auto;">
+      <h5 class="grey-text text-darken-1" style="text-align: center;">Ups.. Kamu Tidak Memiliki Team Favorite</h5>
+      `;
+    }
 
+    return document.querySelector("#favorites").innerHTML = dataFav;
   }
 }
